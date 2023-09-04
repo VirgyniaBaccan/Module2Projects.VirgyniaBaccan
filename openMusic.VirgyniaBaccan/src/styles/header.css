@@ -1,0 +1,28 @@
+.header__container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: var(--container);
+    max-width: 100%;
+    height: 7.375rem;
+    padding: 0 16px;
+    padding-bottom: 1.25rem;
+    margin: 0 auto;
+
+}
+
+.header__logo {
+
+    width: 9.8125rem;
+    height: 2.125rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-1);
+    line-height: 2.125rem;
+
+    color: var(--color-grey-1);
+}

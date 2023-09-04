@@ -1,0 +1,91 @@
+.theme__button {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5625rem;
+
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: var(--font-2);
+    line-height: 1.125rem;
+    justify-content: center;
+    cursor: pointer;
+    padding: .3125rem;
+    border-radius: var(--radius-1);
+
+    color: var(--color-grey-1);
+    background-color: var(--color-grey-8);
+
+}
+
+.theme__button:hover {
+    background-color: var(--color-grey-7);
+}
+
+.div__buttons {
+    display: flex;
+    width: 100%;
+    padding-top: 1var(--font-3);
+    gap: 1.125rem;
+    flex-wrap: wrap;
+
+
+}
+
+.div__title-buttons {
+    width: 7.5625rem;
+    height: 1.1875rem;
+    margin-bottom: 1.5rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-2);
+    line-height: 1.1875rem;
+
+    color: var(--color-grey-1);
+}
+
+.container>.div__buttons>button {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .5rem;
+
+
+    width: 4.375rem;
+    height: 2rem;
+
+    background: var(--color-grey-8);
+
+
+    border: .0625rem solid var(--color-grey-8);
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-3);
+    line-height: 0rem;
+
+    border: .0625rem solid var(--color-grey-8);
+    border-radius: var(--radius-1);
+
+
+    color: var(--color-grey-2);
+
+}
+
+.container>.div__buttons>button:hover {
+
+    background: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
+
+.container>.div__buttons>button:focus {
+
+    background: var(--color-grey-1);
+    color: var(--color-grey-8);
+}

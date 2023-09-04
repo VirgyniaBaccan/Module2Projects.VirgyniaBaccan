@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <title>Open Music</title>
+  </head>
+
+  <body>
+    <header class="header__container">
+      <h1 class="header__logo">open music</h1>
+      <img class="theme__button" src="./src/assets/img/moon.svg" />
+    </header>
+    <main class="container">
+      <h2 class="div__title-buttons">Gênero Musical</h2>
+      <div class="div__buttons">
+        <button>Todos</button>
+        <button>Pop</button>
+        <button>MPB</button>
+        <button>Forró</button>
+        <button>Samba</button>
+        <button>Baião</button>
+        <button>Rap</button>
+        <button>Hip-Hop</button>
+        <button>Rock</button>
+        <button>Reggae</button>
+        <button>Country</button>
+        <button>Gospel</button>
+      </div>
+      <div class="div__pricesRange">
+        <div class="div__price">
+          <h2 class="div__title-prices">Definir preço</h2>
+          <h2 class="filter__title">Até R$89,00</h2>
+        </div>
+        <div class="div__filter-range">
+          <input class="input__range" id="campo" type="range" min="0" max="89" step="1" />
+        </div>
+      </div>
+
+      <div class="div__albums">
+        <h2 class="div__albums-title">Albums Encontrados</h2>
+        <ul class="list__albums">
+
+        </ul>
+      </div>
+    </main>
+    <script type="module" src="./src/scripts/productsData.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script>
+    
+  </body>
+
+</html>
