@@ -1,0 +1,113 @@
+.main__resume-buttons {
+    gap: .3125rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main__button {
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .875rem;
+    gap: .625rem;
+
+    width: 4.375rem;
+    height: 2rem;
+
+    background: var(--fixed-white);
+    color: var(--color-grey-2);
+    border: .0938rem solid var(--color-grey-5);
+    border-radius: .5rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-size-3);
+    line-height: 1.0625rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.main__button:focus {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 0.1rem solid var(--color-brand-1);
+}
+
+.main__button:hover {
+    background-color: var(--color-brand-3);
+    color: var(--color-brand-1);
+    border: 0.1rem solid var(--color-brand-1);
+    transition: all 0.2s ease;
+}
+
+.button__delete {
+    box-sizing: border-box;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem .5rem;
+    gap: .625rem;
+
+    width: 1.7656rem;
+    height: 1.625rem;
+
+    background: var(--fixed-white);
+
+    border: .0938rem solid var(--fixed-white);
+    border-radius: .25rem;
+    transition: all 0.2s ease;
+}
+
+.button__delete:hover {
+    border: .125rem solid var(--color-grey-3);
+}
+
+.card__empty {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .875rem 2.25rem;
+    gap: 1rem;
+    width: 100%;
+
+    background:var(--color-grey-5);
+
+
+    border: .0938rem dashed var(--color-grey-3);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.title__empty {
+    width: 12.5rem;
+    height: 1.1875rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-size-2);
+    line-height: 1.1875rem;
+
+    color: var(--color-grey-1);
+}
+
+.text__empty {
+
+    width: 8.375rem;
+    height: 1.0625rem;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-3);
+    line-height: 1.0625rem;
+ 
+    color: var(--color-grey-2);
+}

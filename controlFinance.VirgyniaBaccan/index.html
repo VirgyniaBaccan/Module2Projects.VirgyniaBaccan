@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <link rel="stylesheet" href="./src/styles/form.css" />
+  </head>
+
+  <body>
+    <header class="header__container">
+      <nav class="nav__container">
+        <h1 class="nav__logo">
+          <span class="span__logo">Control </span>Finance
+        </h1>
+        <button class="nav__button">Registrar novo valor</button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="div__main">
+        <div class="main__container-resume">
+          <h2 class="main__resume-title">Resumo financeiro</h2>
+          <div class="main__resume-buttons">
+            <button class="main__button" id="button__all">Todos</button>
+            <button class="main__button" id="button__entry">Entradas</button>
+            <button class="main__button" id="button__exit">Saídas</button>
+          </div>
+        </div>
+
+        <div class="main__sum">
+          <h2 class="main__sum-title">Soma dos valores</h2>
+          <p class="values__sum">R$ 0,00</p>
+        </div>
+
+        <div class="main__DOM">
+          <ul class="mainList"></ul>
+        </div>
+      </div>
+    </main>
+
+    <dialog class="modal__controller">
+      <form class="modal__container">
+        <div class="div__closeModal">
+          <h2 class="modal__title">Registro de valor</h2>
+          <button class="button__closeModal">
+            <img src="./src/assets/x.svg" />
+          </button>
+        </div>
+        <p class="modal_text">
+          Digite o valor e em seguida aperte no botão referente ao tipo do valor
+        </p>
+        <h2 class="modal__title">Valor</h2>
+        <div class="div__modal-input">
+          <input
+            class="modal__input"
+            name="value"
+            type="number"
+            placeholder="00.00"
+          />
+          <p class="input__text">R$</p>
+        </div>
+
+        <div class="div__entry-exit">
+          <h2 class="modal__title">Tipo de Valor</h2>
+          <button class="button__entry" id="button__valueType">Entrada</button>
+          <button class="button__exit" id="button__valueType">Saída</button>
+        </div>
+
+        <div class="div__cancel-insert">
+          <button class="button__cancel">Cancelar</button>
+          <button class="button__insertValue">Criar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>
